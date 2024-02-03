@@ -1,14 +1,14 @@
 import React,{useState,useEffect,useContext} from 'react'
 import { useParams } from 'react-router-dom'
 import {fetchDataFromApi} from '../utils/api'
-import { Context } from "../context/contextApi";
 import LeftNav from '../components/LeftNav'
 import SearchResultVideoCard from './SearchResultVideoCard'
+import { Context } from "../context/contextApi";
 
 const SearchResult = () => {
   const[result , setResult] = useState()
   const {searchQuery} = useParams()
-  const {setLoading} = useContext(Context);
+  const { setLoading } = useContext(Context);
 
   useEffect(() => {
     document.getElementById("root").classList.remove("custom-h")
