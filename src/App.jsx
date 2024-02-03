@@ -6,7 +6,7 @@ import {BrowserRouter , Routes , Route} from 'react-router-dom'
 import SearchResult from './components/SearchResult'
 import  VideoDetails from './components/VideoDetails'
 
-import { AppContext } from './context/ContextApi'
+import { AppContext } from './context/Context'
 
 function App() {
   return (
